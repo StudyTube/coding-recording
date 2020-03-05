@@ -3,21 +3,31 @@
 	"displayName": "Coding Recording",
 	"description": "Record your coding to play it in Coding Player",
 	"version": "0.0.1",
+	"publisher": "Studytube",
 	"engines": {
-		"vscode": "1.42.1"
+		"vscode": "1.43.0"
 	},
 	"categories": [
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.startRecording"
+		"onCommand:coding-recording.startRecording",
+		"onCommand:coding-recording.replay"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.startRecording",
+				"command": "coding-recording.startRecording",
 				"title": "Coding Recording: start recording"
+			},
+			{
+				"command": "coding-recording.saveRecording",
+				"title": "Coding Recording: save recording"
+			},
+			{
+				"command": "coding-recording.replay",
+				"title": "Coding Recording: replay"
 			}
 		]
 	},
@@ -33,7 +43,7 @@
 		"@types/glob": "7.1.1",
 		"@types/mocha": "7.0.1",
 		"@types/node": "12.11.7",
-		"@types/vscode": "1.42.0",
+		"@types/vscode": "1.43.0",
 		"eslint": "6.8.0",
 		"@typescript-eslint/parser": "2.18.0",
 		"@typescript-eslint/eslint-plugin": "2.18.0",
