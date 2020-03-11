@@ -1,4 +1,11 @@
-# coding-recording README
+# coding-recording
+
+## To do:
+
+- learn https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour
+
+------------------------------------------------------------
+# TODO: FILL THIS LATER
 
 This is the README for your extension "coding-recording". After writing up a brief description, we recommend including the following sections.
 
